@@ -1,0 +1,1269 @@
+.ui-menu .ui-menu-divider {
+  height: 25px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 15px;
+  -webkit-tap-highlight-color: transparent;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-size: 28px;
+  line-height: 1.42857;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+  margin: 0;
+}
+header,
+nav,
+footer {
+  display: block;
+}
+a {
+  color: #000000;
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: bold;
+}
+[role="button"] {
+  cursor: pointer;
+}
+.content {
+  width: 75%;
+  margin: 0 auto;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.col-xs-8,
+.col-xs-4 {
+  position: relative;
+  padding: 0 15px;
+  float: left;
+}
+.col-xs-8 {
+  width: 66.66667%;
+}
+.col-xs-4 {
+  width: 33.33333%;
+}
+.hide,
+.hidden {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+  line-height: 1.1;
+}
+h1 small,
+h1 .small,
+h2 small,
+h2 .small,
+h3 small,
+h3 .small,
+h4 small,
+h4 .small,
+h5 small,
+h5 .small,
+h6 small,
+h6 .small,
+.h1 small,
+.h1 .small,
+.h2 small,
+.h2 .small,
+.h3 small,
+.h3 .small,
+.h4 small,
+.h4 .small,
+.h5 small,
+.h5 .small,
+.h6 small,
+.h6 .small {
+  font-weight: normal;
+  line-height: 1;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1 small,
+h1 .small,
+.h1 small,
+.h1 .small,
+h2 small,
+h2 .small,
+.h2 small,
+.h2 .small,
+h3 small,
+h3 .small,
+.h3 small,
+.h3 .small {
+  font-size: 65%;
+}
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h4 small,
+h4 .small,
+.h4 small,
+.h4 .small,
+h5 small,
+h5 .small,
+.h5 small,
+.h5 .small,
+h6 small,
+h6 .small,
+.h6 small,
+.h6 .small {
+  font-size: 75%;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+}
+.bg-primary {
+  color: rgba(255, 255, 255, 0);
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.text-right {
+  text-align: right;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.btn:focus,
+.btn.focus,
+.btn:active:focus,
+.btn:active.focus,
+.btn.active:focus,
+.btn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  outline: 0;
+  background-image: none;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 3px;
+}
+.btn-primary {
+  line-height: 1.8em;
+}
+.btn-primary:focus,
+.btn-primary:active {
+  outline: none;
+}
+.btn-lg {
+  font-weight: 300;
+}
+.btn-custom {
+  border: 0;
+  line-height: 1.8em;
+}
+.btn-custom:hover,
+.btn-custom:active,
+.btn-custom:focus {
+  border: 0;
+  outline: 0;
+}
+.btn-custom:hover:active {
+  border: 0;
+}
+#submit-button.disabled {
+  pointer-events: none;
+}
+.application-btn .btn.btn-primary.linkedin-apply-btn {
+  color: #0075b5;
+  border-color: #0075b5;
+  background-color: transparent;
+}
+.application-btn .btn.btn-primary.linkedin-apply-btn:hover,
+.application-btn .btn.btn-primary.linkedin-apply-btn:focus,
+.application-btn .btn.btn-primary.linkedin-apply-btn:active {
+  color: #fff;
+  background-color: #0075b5;
+}
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.form-group .error-msg {
+  position: absolute;
+  top: 50px;
+  right: -2px;
+  padding: 5px 15px;
+  font-weight: normal;
+  border-radius: 3px;
+  color: #fff;
+  z-index: 18;
+  background: #d60000;
+}
+.form-group .error-msg::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+  top: -8px;
+  right: 8px;
+  border-bottom: 10px solid #d60000;
+}
+.form-group label {
+  font-weight: normal;
+  margin-bottom: 0;
+  line-height: 1em;
+  padding: 3px 5px;
+  margin-left: 8px;
+  position: relative;
+  z-index: 10;
+}
+.form-group .checkbox,
+.form-group .radio {
+  margin-left: 15px;
+}
+.radio-form-group label {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 20px;
+}
+.radio-form-group .form-control {
+  height: auto;
+  min-height: 34px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  background-image: none;
+  border-radius: 4px;
+  margin-top: -3px;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.form-control::-ms-expand {
+  border: 0;
+  background-color: transparent;
+}
+.form-control[disabled],
+.form-control[readonly] {
+  opacity: 1;
+}
+.form-control[disabled] {
+  cursor: not-allowed;
+}
+.form-control.error {
+  border: 1px solid #d60000;
+}
+.link-group {
+  position: relative;
+}
+.link-group .btn-add {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  font-size: 26px;
+  line-height: 20px;
+  font-weight: 300;
+}
+.link-group .form-group {
+  margin-bottom: 20px;
+}
+.link-group .form-group .form-control {
+  margin-top: 0;
+}
+.date-input-wrapper {
+  position: relative;
+}
+.date-input-wrapper input {
+  cursor: pointer;
+  padding-right: 30px;
+}
+.date-input-wrapper .icon-calendar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 7px;
+}
+.file-field {
+  margin-bottom: 20px;
+}
+.file-field label {
+  cursor: pointer;
+  width: initial;
+  min-width: 50%;
+  max-width: 80%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 3px;
+  font-weight: normal;
+}
+.file-field .icon-trash {
+  height: 30px;
+  width: 30px;
+  padding: 7px;
+  cursor: pointer;
+}
+.datepicker table tr td.active.active {
+  -moz-background-image: none;
+  -ms-background-image: none;
+  -webkit-background-image: none;
+  background-image: none;
+}
+header {
+  position: relative;
+}
+header .navbar {
+  position: relative;
+  min-height: 50px;
+  margin: 0;
+  padding: 14px 0;
+  border: 1px solid transparent;
+}
+.navbar-brand {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 0;
+  height: 35px;
+}
+.navbar-brand img {
+  height: 100%;
+}
+.brand-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px;
+  margin-left: 10px;
+}
+.page-title {
+  padding: 25px 0;
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0;
+}
+.error {
+  border: 1px solid #d60000;
+}
+.required {
+  color: #d60000;
+}
+.error-msg {
+  color: #d60000;
+}
+.link-hide {
+  color: #d60000;
+}
+.error-msg {
+  color: #d60000;
+}
+input[type="checkbox"].check-box {
+  position: absolute;
+  margin-left: -20px;
+  top: 0px;
+}
+input[type="checkbox"].check-box:focus,
+input[type="checkbox"].check-box:active {
+  box-shadow: none;
+}
+input[type="radio"] {
+  margin-right: 5px;
+  vertical-align: bottom;
+  margin-left: 0;
+}
+.link-hide {
+  display: none;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.vertical-align {
+  display: inline-block;
+  vertical-align: middle;
+}
+.pr5 {
+  padding-right: 5px;
+}
+.pl5 {
+  padding-left: 5px;
+}
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.index-banner {
+  height: 480px;
+  background-size: cover;
+  background-position: bottom center;
+}
+.content {
+  width: 90%;
+  margin: 0 auto;
+}
+.job-role-list {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .job-role-list > ul > li {
+    padding: 0;
+  }
+}
+
+.job-role-list > ul > li {
+  border-bottom: 0.5px solid #000000;
+}
+.job-role-list > ul > li {
+  position: relative;
+  padding: 20px 0 0;
+  margin: 0;
+}
+.job-role-list .role-title {
+  margin: -20px 0 0;
+  margin-left: 20px;
+  padding: 20px 0 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+.job-role-list .role-title > h5 {
+  color: #000000;
+  font-family: Lato, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+.job-role-list .role-title h5 {
+  display: inline-block;
+  margin-bottom: 18px;
+  margin-top: 0;
+  font-size: 30px;
+}
+.job-role-list .mobile-role-count {
+  display: none;
+}
+.job-role-list .role-count {
+  font-size: 14px;
+  padding: 6px 18px;
+  margin-right: 20px;
+}
+
+.role-title .role-count {
+  transition: 0.15s ease-out;
+}
+.job-role-list .role-count {
+  background-color: #313131;
+}
+.job-role-list .role-count {
+  float: right;
+  font-size: 13px;
+  padding: 3px 15px;
+  border-radius: 40px;
+  margin-right: 30px;
+}
+.job-role-list .open-list .hidden-content {
+  display: inline-table;
+}
+.job-role-list .open-list > li {
+  border-bottom: 0;
+}
+.job-role-list .open-list > li input[type="radio"] {
+  display: none;
+}
+.job-role-list .open-list > li .role-title {
+  margin-bottom: 10px;
+}
+.job-role-list .hidden-content {
+  display: none;
+  width: 100%;
+}
+.job-role-list > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.job-role-list > ul > li {
+  position: relative;
+  padding: 20px 0 0;
+  margin: 0;
+}
+.job-role-list > ul > li:last-child {
+  border: 0;
+}
+.job-role-list > ul > li input[type="radio"] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  opacity: 0;
+  margin: -20px 0;
+}
+.job-role-list > ul > li input[type="radio"]:hover ~ .role-title {
+  background: #f7f7f7;
+  padding-left: 20px;
+  border-radius: 3px;
+}
+.job-role-list > ul > li input[type="radio"]:checked ~ .hidden-content {
+  margin-top: 0;
+  max-height: 0;
+  padding: 0;
+  opacity: 1;
+  display: inline-table;
+}
+.job-role-list .hidden-content {
+  display: none;
+  width: 100%;
+}
+.job-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .job-list > li {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.job-list > li {
+  padding: 10;
+  width: 100%;
+  float: left;
+  margin: 10px 10px;
+  transform: none;
+  color: #000000;
+  transition: transform 0.15s ease-out;
+  border: 1px solid #000000;
+  box-shadow: none;
+  position: relative;
+}
+.job-list > li {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 20%);
+}
+
+.job-list > li {
+  padding: 20px 20px 20px 30px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.job-list .job-title {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+.job-list .job-title:hover {
+  text-decoration: none;
+}
+.job-list .job-location {
+  text-align: right;
+  padding: 25px 10px;
+  font-size: 15px;
+}
+.job-list .job-location .location-info,
+.job-list .job-location .location-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+}
+.job-list .job-location .location-icon {
+  margin-left: 20px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer .nav {
+  margin: 0 auto;
+  display: inline-block;
+}
+.footer .nav .nav-link + .nav-link {
+  margin-left: 2rem;
+}
+.search {
+  margin-top: -61px;
+  background-color: rgba(34, 27, 40, 0.6);
+}
+.input-search,
+.job-search-form select {
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 50%;
+  height: 40px;
+}
+.input-search:hover,
+.input-search:focus,
+.job-search-form select:hover,
+.job-search-form select:focus {
+  outline: none;
+}
+.with-link-back.job-search-form {
+  width: 100%;
+}
+.with-link-back .input-search {
+  width: 40%;
+}
+.with-link-back.job-search-form select {
+  width: 25%;
+}
+.job-search-form {
+  padding: 10px 0;
+  width: 80%;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.job-search-form select {
+  width: 30%;
+  background-color: #fff;
+}
+.job-search-form .btn-custom,
+.job-search-form select {
+  margin-left: 10px;
+}
+.job-details {
+  margin: 0 auto;
+}
+.job-details .link-back {
+  margin-bottom: 20px;
+  display: block;
+}
+.job-details .icon-arrow-left {
+  margin-right: 5px;
+}
+.job-details .icon-exclamation {
+  font-size: 50px;
+}
+.job-details .error-message {
+  font-size: 25px;
+}
+.job-details .redirect-message-block {
+  margin-top: 20px;
+  padding: 8px 15px;
+  border-radius: 4px;
+}
+.job-details .job-inactive-content {
+  margin-top: 100px;
+  text-align: center;
+}
+.job-details .inline-block {
+  display: inline-block;
+}
+.job-list-info {
+  width: 50%;
+}
+.job-location {
+  width: 50%;
+}
+.job-list-info,
+.job-location {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.job-details-header {
+  padding: 30px 0;
+  font-size: 18px;
+}
+.job-details-header h1 {
+  margin-top: 0;
+  font-size: 32px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.job-details-header .text-color {
+  font-size: 14px;
+}
+.job-details-header .btn-custom {
+  font-size: 18px;
+  padding: 6px 29px;
+}
+.job-details-header .btn-custom.disabled {
+  opacity: 0.3;
+}
+.job-details-header.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 15px 0;
+  z-index: 999;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.6);
+}
+.word-break-all {
+  word-break: break-all;
+}
+.job-details-content {
+  margin-top: 50px;
+}
+.job-details-content div:empty {
+  display: none;
+}
+.job-details-content .public_job_info {
+  padding-left: 30px;
+  border-left: 2px solid #a0a0a0;
+}
+.job-details-content .public_job_description {
+  padding-right: 30px;
+}
+.job-details-content .fr-video {
+  clear: both;
+  text-align: center;
+  display: block;
+}
+.job-details-content .fr-video.fr-fvl {
+  text-align: left;
+}
+.job-details-content .fr-video.fr-fvr {
+  text-align: right;
+}
+.application-form {
+  margin: 50px 0;
+  max-width: 600px;
+  display: none;
+}
+.application-form .btn-primary.btn-lg {
+  margin-top: 25px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.application-form .alert {
+  padding: 0;
+  margin: 0;
+}
+.application-form .alert-success,
+.application-form .alert-danger {
+  padding: 10px;
+  border-radius: 3px;
+}
+.application-form .alert-success ul,
+.application-form .alert-danger ul {
+  margin: 0;
+}
+.application-form .alert-danger {
+  padding-left: 20px;
+}
+.application-btn {
+  margin: 30px 0;
+}
+.application-btn .btn.btn-primary {
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.application-btn .btn.btn-primary.analysing {
+  background-image: linear-gradient(
+    135deg,
+    rgba(236, 240, 241, 0.8) 25%,
+    rgba(236, 240, 241, 0) 25%,
+    rgba(236, 240, 241, 0) 50%,
+    rgba(236, 240, 241, 0.8) 50%,
+    rgba(236, 240, 241, 0.8) 75%,
+    rgba(236, 240, 241, 0) 75%,
+    rgba(236, 240, 241, 0) 100%
+  );
+  color: #ccc;
+  border-color: #ccc;
+  background-size: 20px 20px;
+  cursor: not-allowed;
+}
+.text-or {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 5px;
+  font-size: 16px;
+}
+.resume-upload {
+  display: inline-block;
+  position: relative;
+  max-width: 60%;
+}
+.resume-upload:hover .btn.btn-primary.analysing {
+  background-color: transparent;
+  background-image: linear-gradient(
+    135deg,
+    rgba(236, 240, 241, 0.8) 25%,
+    rgba(236, 240, 241, 0) 25%,
+    rgba(236, 240, 241, 0) 50%,
+    rgba(236, 240, 241, 0.8) 50%,
+    rgba(236, 240, 241, 0.8) 75%,
+    rgba(236, 240, 241, 0) 75%,
+    rgba(236, 240, 241, 0) 100%
+  );
+  background-size: 20px 20px;
+  color: #ccc;
+  border-color: #ccc;
+}
+.resume-upload .upload-file {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.resume-upload .upload-file[disabled] {
+  cursor: not-allowed;
+}
+.resume-upload .upload-file.error label {
+  border: 2px solid #d60000;
+}
+.resume-upload .file-disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.resume-upload label {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+.resume-upload.error {
+  border: none;
+}
+.resume-upload.error label {
+  border: 2px solid #d60000 !important;
+}
+.analysing {
+  -webkit-animation: 3s infinite move-background linear;
+  -moz-animation: 3s infinite move-background linear;
+  -ms-animation: 3s infinite move-background linear;
+  animation: 3s infinite move-background linear;
+}
+@keyframes move-background {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+.form-group .link-label {
+  font-size: 14px;
+  padding: 0;
+  margin: 0 0 20px;
+}
+.group-field input[type="checkbox"][disabled] {
+  cursor: not-allowed;
+}
+.link-label + .btn-add {
+  display: block;
+}
+.form-group .link-label-title {
+  font-size: 16px;
+  padding: 0;
+  margin: 25px 0 5px;
+  font-weight: 600;
+}
+.first_name,
+.last_name,
+.middle_name {
+  float: left;
+  width: 30%;
+}
+.first_name {
+  margin-right: 5%;
+}
+.middle_name {
+  margin-right: 5%;
+}
+.last_name + * {
+  clear: both;
+}
+.no_middle_name .first_name,
+.no_middle_name .last_name {
+  width: 48%;
+}
+.no_middle_name .first_name {
+  margin-right: 4%;
+}
+.vertical-align {
+  display: inline-block;
+  vertical-align: middle;
+}
+.form-group.group-field {
+  border: 1px solid #dadfe3;
+  padding: 0 20px 20px;
+  border-radius: 5px;
+  margin-right: -50px;
+}
+.form-group.group-field .datepicker-popover {
+  width: 35%;
+  margin-right: 8px;
+  display: inline-block;
+}
+.form-group.group-field .btn-add {
+  outline: none;
+}
+.employer-group:not(:last-of-type),
+.education-group:not(:last-of-type) {
+  border-bottom: 1px solid #dadfe3;
+  margin-bottom: 20px;
+}
+.form-group .btn-remove {
+  margin-bottom: 20px;
+}
+.form-group textarea {
+  height: auto;
+}
+@media only screen and (max-width: 720px) {
+  .index-banner {
+    height: 180px;
+  }
+  .content {
+    width: 85%;
+    overflow: hidden;
+  }
+  .job-list > li {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  .job-role-list > ul > li {
+    padding: 10px 0;
+  }
+  .job-role-list > ul > li input[type="radio"] {
+    top: 0;
+    height: 25px;
+    margin: 10px 0;
+  }
+  .job-role-list > ul > li input[type="radio"]:checked ~ .hidden-content {
+    margin-top: 10px;
+  }
+  .job-role-list > ul > li input[type="radio"]:hover ~ .role-title {
+    background: none;
+    padding-left: 0;
+  }
+  .job-role-list ul li .role-title h5 {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .page-title {
+    text-align: center;
+  }
+  .search {
+    margin-top: 0;
+  }
+  .job-search-form {
+    white-space: normal;
+  }
+  .input-search,
+  .job-search-form select {
+    width: 100%;
+  }
+  .with-link-back .input-search,
+  .with-link-back.job-search-form select {
+    width: 100%;
+  }
+  .job-search-form .btn-primary,
+  .job-search-form select {
+    width: 100%;
+    margin: 10px 0 0;
+  }
+  .job-search-form .btn-custom {
+    margin-top: 10px;
+  }
+  .job-role-list .mobile-role-count {
+    display: inline;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+  .job-role-list .role-count {
+    display: none;
+  }
+  .job-list .job-location {
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #ececec;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  .job-list .location-info {
+    width: 70%;
+  }
+  .job-list .location-icon {
+    float: right;
+    padding-top: 7px;
+  }
+  .job-list .job-list-info {
+    width: 100%;
+  }
+  .job-details .link-back {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+  .job-details-header {
+    text-align: center;
+    padding: 10px 0;
+  }
+  .job-details-header.sticky {
+    padding: 10px 0;
+  }
+  .job-details-header.sticky .stick-hide-in-mobile {
+    display: none;
+  }
+  .job-details-header.sticky h1 {
+    font-size: 16px;
+  }
+  .job-details-header.sticky .btn.btn-primary {
+    margin: 5px;
+    line-height: 1.2;
+    font-size: 14px;
+  }
+  .job-details-header.sticky .btn.btn-primary.disabled {
+    display: none;
+  }
+  .job-details-header h1 {
+    font-size: 22px;
+  }
+  .job-details-header .col-xs-8,
+  .job-details-header .col-xs-4 {
+    width: 100%;
+    text-align: center;
+  }
+  .job-details-header .btn.btn-primary {
+    margin: 5px;
+    line-height: 1.4;
+  }
+  .application-form h3.brand-color {
+    text-align: center;
+  }
+  .application-btn {
+    text-align: center;
+  }
+  .application-btn .text-or {
+    display: block;
+    margin: 10px 0;
+  }
+  .application-btn .resume-upload,
+  .application-btn .btn.btn-primary {
+    max-width: 100%;
+  }
+  .application-btn .btn.btn-primary {
+    width: initial;
+    margin: 0 auto;
+  }
+  .application-btn button.btn.btn-primary {
+    display: block;
+  }
+  .first_name,
+  .last_name,
+  .middle_name {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .no_middle_name .first_name,
+  .no_middle_name .last_name,
+  .no_middle_name .middle_name {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .form-group.link-group .form-control {
+    padding-right: 50px;
+  }
+  .form-group.group-field {
+    margin-right: unset;
+  }
+  .form-group.group-field .datepicker-popover {
+    width: calc(50% - 2px);
+    margin-right: unset;
+  }
+  .link-group .btn-add {
+    right: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .file-field label {
+    width: 80%;
+  }
+  .job-details-content .row {
+    margin: 0;
+  }
+  .job-details-content .col-xs-8,
+  .job-details-content .col-xs-4 {
+    width: 100%;
+    padding: 0;
+  }
+  .job-details-content .public_job_info {
+    border-left: 0;
+  }
+  .job-details-content .public_job_info > div:first-child {
+    padding-top: 30px;
+    border-top: 2px solid #a0a0a0;
+  }
+  .job-details-content .public_job_description {
+    padding-bottom: 30px;
+  }
+}
+.in-iframe div.index-banner,
+.in-iframe .header {
+  display: none;
+}
